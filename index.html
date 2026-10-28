@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>BOOKORA</h1>
+        <p>Discover stories. Give books a second life.</p>
+    </header>
+
+    <main>
+        <h2>Bookora</h2>
+        <p>Add and manage pre-loved books.</p>
+
+        <form id="bookForm">
+            <input type="text" id="bookTitle"
+                   placeholder="Book title" required>
+
+            <input type="text" id="bookAuthor"
+                   placeholder="Author name" required>
+
+            <input type="number" id="bookPrice"
+                   placeholder="Price (₹)" min="1" required>
+
+            <button type="submit">Add Book</button>
+        </form>
+
+        <div class="filters">
+            <button type="button" data-filter="all">All Books</button>
+            <button type="button" data-filter="available">Available</button>
+            <button type="button" data-filter="sold">Sold</button>
+        </div>
+
+        <p id="counter"></p>
+        <ul id="bookList"></ul>
+    </main>
+
+    <footer>
+        <p>BOOKORA - Affordable Books, Endless Stories</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

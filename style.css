@@ -1,0 +1,112 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f1e8;
+    color: #333;
+}
+
+header {
+    background: #315c45;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+main {
+    max-width: 750px;
+    margin: 35px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000015;
+}
+
+h2 {
+    color: #315c45;
+}
+
+#bookForm {
+    display: grid;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #315c45;
+    color: white;
+    margin: 3px;
+}
+
+button:hover {
+    background: #234532;
+}
+
+.filters {
+    margin: 15px 0;
+}
+
+#bookList {
+    list-style: none;
+    padding: 0;
+}
+
+.book-card {
+    border: 1px solid #ddd;
+    border-left: 5px solid #315c45;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.book-card h3 {
+    margin: 0 0 8px;
+}
+
+.book-card p {
+    margin: 5px 0;
+}
+
+.sold {
+    opacity: 0.65;
+    border-left-color: #999;
+}
+
+.sold h3 {
+    text-decoration: line-through;
+}
+
+.delete-btn {
+    background: #b83b3b;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+}
